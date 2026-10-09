@@ -50,7 +50,7 @@ class UserManager(BaseUserManager):
 class User(AbstractUser):
     username = None
     email = models.EmailField(unique=True)
-    is_active = models.BooleanField(default=False)   # <-- yangi qator
+    is_active = models.BooleanField(default=False)  
 
     objects = UserManager()
 
